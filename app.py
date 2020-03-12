@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import os
-from db import Db
+from funcs.db import Db
 
 app = Flask(__name__, template_folder='templates')
 db = Db()
