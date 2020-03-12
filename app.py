@@ -13,4 +13,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='https://mpoiitis.netlify.com', port=5000)
+    app.run(debug=True)
