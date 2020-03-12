@@ -1,3 +1,0 @@
-Command = "python freeze.py"
-Functions = "lambda"
-Publish = "build"
