@@ -3,14 +3,13 @@ import os
 from db import Db
 
 app = Flask(__name__, template_folder='templates')
-# db = Db()
+db = Db()
 
 
 @app.route("/")
 def home():
-    # todos = db.find_all('todos')
-    # return render_template('home.html', todos=list(todos))
-    return "Hello"
+    todos = db.find_all('todos')
+    return render_template('home.html', todos=list(todos))
 
 
 if __name__ == "__main__":
